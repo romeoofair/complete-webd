@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Variables</title>
+        
+    </head>
+    <body>
+        
+        <p><input type="text" id="text"><button id="textb">Change the text</button></p>
+        
+        <p id="replace">This is some text!</p>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("textb").onclick = function() {
+               
+               var newtext = ""; 
+               newtext = document.getElementById("text").value;
+               document.getElementById("replace").innerHTML = newtext;
+            }
+            
+        </script>
+
+    </body>    
+</html>

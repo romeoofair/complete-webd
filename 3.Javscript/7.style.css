@@ -1,0 +1,19 @@
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    margin: 50px;
+}
+
+#circle1{
+    background-color: red;
+}
+
+#circle2{
+    background-color: blue;
+}
+
+#circle3{
+    background-color: yellowgreen;
+}

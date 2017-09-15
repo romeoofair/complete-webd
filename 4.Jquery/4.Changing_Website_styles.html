@@ -1,0 +1,70 @@
+<html>
+    <head>
+        
+        <title>JQuery</title>
+        
+        <!--JQuery CDN-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+        <!--JQuery local version -->
+        <script src="javascript/jquery-3.1.0.min.js"></script>
+        
+        <!--custom css-->
+        <style>
+           
+            .box{
+                height: 200px;
+                width:200px;
+                margin: 10px;
+            }
+
+            #greenc{
+                background-color: green;
+                border-radius: 50%;
+            }
+            
+            #reds1{
+                background-color: red;
+            }
+            
+            #reds2{
+                background-color: red;
+            }
+            
+        </style>
+            
+    </head>
+    
+    <body>
+         
+        <div id="greenc" class="box"></div>
+        
+        <div id="reds1" class="box"></div>
+        
+        <div id="reds2" class="box"></div>
+                
+        <script type="text/javascript">
+        
+            $("#greenc").click(function() {
+                
+             //   $("#greenc").css("width", "400px");
+             //   $("#greenc").css("background-color","red");  
+                
+             //   alert($("#greenc").css("background-color"));
+                
+            //    alert($("body").css("width"));
+                
+            });
+            
+            $(".box").click(function() {
+                   
+                    alert("you clicked on a " + $(this).attr("id"));
+                    
+                    $(this).css("display","none");
+                
+              });  
+            
+        </script>
+        
+    </body>    
+</html>

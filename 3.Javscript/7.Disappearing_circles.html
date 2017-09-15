@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Disappearing circles</title>
+        <link href="7.style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="circle1" class="circle"></div>
+        <div id="circle2" class="circle"></div>
+        <div id="circle3" class="circle"></div>
+        
+        <script type="text/javascript">
+            document.getElementById("circle1").onclick = function() {
+                document.getElementById("circle1").style.display = "none";
+            }
+            document.getElementById("circle2").onclick = function() {
+                document.getElementById("circle2").style.display = "none";
+            }
+            document.getElementById("circle3").onclick = function() {
+                document.getElementById("circle3").style.display = "none";
+            }
+        </script>
+    </body>    
+</html>
